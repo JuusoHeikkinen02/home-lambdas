@@ -29,7 +29,6 @@ const createCoachBotAnswerHandler: APIGatewayProxyHandler = async (event: APIGat
       return {
         statusCode: 409,
         body: JSON.stringify({
-          code: "ALREADY_ANSWERED",
           message: error.message
         })
       };
